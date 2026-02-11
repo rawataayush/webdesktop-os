@@ -18,85 +18,127 @@ html, body{
     background-size: cover;
     background-position: center;
     position: relative;
-}
 
-.taskbar{
-    width: 100%;
-    height: 3rem;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: 1rem;
-    background-color: #4a0606f3;
-
-    .left-section{
-        display: flex;
-        gap: 0.5rem;
-
-        i{
-            font-size: 1.8rem;
-        }
-        .temp-val{
-            display:flex;
-            flex-direction: column;
-
-            span{
-                font-size: 0.9rem;
-            }
-        }
-    }
-
-    .center{
+    .taskbar{
+        width: 100%;
+        height: 3rem;
+        position: absolute;
+        bottom: 0;
         display: flex;
         align-items: center;
-        gap: 1rem;
-        font-size: 1.8rem;
-        
-        .search-box{
-            position: relative;
-            width: 8rem;
+        justify-content: space-between;
+        padding-inline: 1rem;
+        background-color: #4a0606f3;
+    
+        .left-section{
+            display: flex;
+            gap: 0.5rem;
+            padding: 0.2rem 0.6rem; 
             
+            &:hover{
+                border-radius: 0.2rem;
+                background-color: #c8c8c82f;
+            }
+
             i{
-                position: absolute;
-                left: 12px;
-                top: 50%;
-                transform: translateY(-50%);
-                font-size: 1rem;
-                text-align: center;
-                color: #888;
+                font-size: 1.8rem ;
             }
 
-            input{
-                width: 100%;
-                height: 2rem;
-                padding: 1rem 1rem 1rem 2rem;
-                border: none;
-                border-radius: 18rem;
-                outline: none;
-                color: #888;
+            .temp-val{
+                display:flex;
+                flex-direction: column;
+    
+                span{
+                    font-size: 0.9rem;
+                }
             }
         }
-    }
-
-    .right-section{
-        display: flex;
-        align-items: center;
-        gap: 0.7rem;
-        
-        .lang{
+    
+        .center{
             display: flex;
-            flex-direction: column;
             align-items: center;
-            font-size: 0.8rem;
-        }
+            gap: 0.5rem;
+            font-size: 1.8rem;
 
-        .time-date{
+            i{
+                padding: 0.2rem 0.4rem; 
+
+                &:hover{
+                    border-radius: 0.2rem;
+                    background-color: #c8c8c82f;
+                }
+            }
+            
+            .search-box{
+                position: relative;
+                width: 8rem;
+                
+                i{
+                    position: absolute;
+                    left: 12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 1rem;
+                    text-align: center;
+                    color: #888;
+                }
+    
+                input{
+                    width: 100%;
+                    height: 2rem;
+                    padding: 1rem 1rem 1rem 2rem;
+                    border: none;
+                    border-radius: 18rem;
+                    outline: none;
+                    color: #888;
+
+                    &:hover{
+                        background-color: #fffffff0;
+                    }
+                }
+            }
+        }
+    
+        .right-section{
             display: flex;
-            flex-direction: column;
-            align-items: end;
-            font-size: 0.8rem;
+            align-items: center;
+            gap: 0.4rem;
+            
+            .lang{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 0.8rem;
+                padding: 0.4rem;
+
+                &:hover{
+                    border-radius: 0.2rem;
+                    background-color: #c8c8c82f;
+                }
+            }
+            
+            .quick-settings{
+                padding: 0.7rem;
+
+                &:hover{
+                    border-radius: 0.2rem;
+                    background-color: #c8c8c82f;
+                }
+            }
+
+            .time-date{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                font-size: 0.8rem;
+                padding: 0.4rem;
+
+                &:hover{
+                    border-radius: 0.2rem;
+                    background-color: #c8c8c82f;
+                }
+            }
         }
     }
 }
+

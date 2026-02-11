@@ -19,8 +19,7 @@ html, body {
   background-position: center;
   position: relative;
 }
-
-.taskbar {
+.container .taskbar {
   width: 100%;
   height: 3rem;
   position: absolute;
@@ -31,31 +30,43 @@ html, body {
   padding-inline: 1rem;
   background-color: rgba(74, 6, 6, 0.9529411765);
 }
-.taskbar .left-section {
+.container .taskbar .left-section {
   display: flex;
   gap: 0.5rem;
+  padding: 0.2rem 0.6rem;
 }
-.taskbar .left-section i {
+.container .taskbar .left-section:hover {
+  border-radius: 0.2rem;
+  background-color: rgba(200, 200, 200, 0.1843137255);
+}
+.container .taskbar .left-section i {
   font-size: 1.8rem;
 }
-.taskbar .left-section .temp-val {
+.container .taskbar .left-section .temp-val {
   display: flex;
   flex-direction: column;
 }
-.taskbar .left-section .temp-val span {
+.container .taskbar .left-section .temp-val span {
   font-size: 0.9rem;
 }
-.taskbar .center {
+.container .taskbar .center {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   font-size: 1.8rem;
 }
-.taskbar .center .search-box {
+.container .taskbar .center i {
+  padding: 0.2rem 0.4rem;
+}
+.container .taskbar .center i:hover {
+  border-radius: 0.2rem;
+  background-color: rgba(200, 200, 200, 0.1843137255);
+}
+.container .taskbar .center .search-box {
   position: relative;
   width: 8rem;
 }
-.taskbar .center .search-box i {
+.container .taskbar .center .search-box i {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -64,7 +75,7 @@ html, body {
   text-align: center;
   color: #888;
 }
-.taskbar .center .search-box input {
+.container .taskbar .center .search-box input {
   width: 100%;
   height: 2rem;
   padding: 1rem 1rem 1rem 2rem;
@@ -73,20 +84,40 @@ html, body {
   outline: none;
   color: #888;
 }
-.taskbar .right-section {
+.container .taskbar .center .search-box input:hover {
+  background-color: rgba(255, 255, 255, 0.9411764706);
+}
+.container .taskbar .right-section {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.4rem;
 }
-.taskbar .right-section .lang {
+.container .taskbar .right-section .lang {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.8rem;
+  padding: 0.4rem;
 }
-.taskbar .right-section .time-date {
+.container .taskbar .right-section .lang:hover {
+  border-radius: 0.2rem;
+  background-color: rgba(200, 200, 200, 0.1843137255);
+}
+.container .taskbar .right-section .quick-settings {
+  padding: 0.7rem;
+}
+.container .taskbar .right-section .quick-settings:hover {
+  border-radius: 0.2rem;
+  background-color: rgba(200, 200, 200, 0.1843137255);
+}
+.container .taskbar .right-section .time-date {
   display: flex;
   flex-direction: column;
   align-items: end;
   font-size: 0.8rem;
+  padding: 0.4rem;
+}
+.container .taskbar .right-section .time-date:hover {
+  border-radius: 0.2rem;
+  background-color: rgba(200, 200, 200, 0.1843137255);
 }/*# sourceMappingURL=style.css.map */
